@@ -132,6 +132,3 @@ func printStringCounts(counts: [String:Int]) -> (){
 
 
 printStringCounts( counts: countStrings(strings: peterPiper) )
-
-
-
