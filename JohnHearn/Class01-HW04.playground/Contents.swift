@@ -73,7 +73,7 @@ class Student: Person {
     }
     var currentlyEnrolled: Bool
     var age: Int {
-        return Int( (Date().timeIntervalSince( self.dateOfBirth! )) / 31_557_600 )
+        return Int( (Date().timeIntervalSince( self.dateOfBirth! )) / 31_556_952 )
     }
 
     init(first: String, last: String, middle: String?=nil, year: Int, month: Int, day: Int, ssn: String, funds: Int) {
@@ -183,7 +183,6 @@ class Classroom {
 }
 
 
-//var person = Person(first: "Joe", last: "Mama", middle: "D", year: 1992, month: 10, day: 10, ssn: "234-56-7890")
 var joe = Student(first: "Joe", last: "Mama", year: 1992, month: 10, day: 10,
                   ssn: "234-56-7890", funds: 100)
 
